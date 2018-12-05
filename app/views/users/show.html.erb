@@ -4,11 +4,20 @@
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
+
+
 <p>
 <%= image_tag @user.avatar.url(:thumb) %>
 </p>
 <p>
 <%= @user.name %>
+</p>
+<p>
+<%= @user.last_name %>
+</p>
+
+<p>
+<%= @user.phone %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

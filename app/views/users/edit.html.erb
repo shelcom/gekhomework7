@@ -1,13 +1,8 @@
 
-
 <h1>Editing User</h1>
 
 <%= render 'form', user: @user %>
-<div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-<% end %>
+
 <%= link_to 'Show', @user %> |
 <%= link_to 'Home', root_path %>
 
