@@ -72,4 +72,8 @@ class ArticlesController < ApplicationController
     def article_params
       params.require(:article).permit(:name, :text)
     end
+
+    def require_admin
+   redirect_to articles unless @current_user
+end
 end
