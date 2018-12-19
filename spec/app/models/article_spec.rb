@@ -12,7 +12,7 @@ RSpec.configure do |config|
   it "validate paperclip" do should validate_attachment_content_type(:avatar).
                 allowing('image/png', 'image/gif').
                 rejecting('text/plain', 'text/xml') 
-              end
+  end
 end
 
 end

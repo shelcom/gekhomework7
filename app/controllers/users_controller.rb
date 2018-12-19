@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+     @users = Users.find(params[:id])
   end
 
   # GET /users/new
@@ -71,13 +72,4 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:email, :password, :password_confirmation, :avatar, :name, :last_name, :phone)
     end
-
-    def logged_in?
-      !current_user.nil?
-    end
-     def logged_in_user
-          unless !current_user.nil?
-            redirect_to users_url
-          end
-        end
 end

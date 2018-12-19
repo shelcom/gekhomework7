@@ -59,6 +59,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'rails-controller-testing'
+  gem 'database_cleaner'
 end
 gem 'bcrypt'
 gem 'bootstrap-sass', '~> 3.3.6'
